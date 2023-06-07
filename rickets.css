@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* --------resets---------    */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --ul-text-color: #577592;
+    --padding-inline-section: 20px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+hr {
+    margin-top: 20px;
+}
+
+/* -----------utility classes--------------- */
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+.small-bold-text {
+    font-size: 1rem;
+    font-weight: 700;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.ul-without-bullets {
+    list-style: none;
+}
+.hover-link {
+    color: var(--primary-text-color); 
+    transition: 0.3s ease-out;
+}
+.hover-link:hover {
+    color: var(--accent-color);
+}
+.button {
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.3s ease-out;
+}
+.button:hover {
+    background-color: var(--accent-color-dark);
+}
+.content-section {
+    justify-content: center;
+    gap: 50px;
+}
+.content-left{
+    max-width: 40vw;
+}
+.content-left h1 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.content-left p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.content-left ul {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: var(--ul-text-color);
+}
+.content-right img {
+    width: 600px;
+}
+.big-text {
+    font-size: 1.5rem;
+}
+
+/* -------------banner------------- */
+
+.banner {
+    background-color: #4fb3d4;
+}
+.banner-text {
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+/* ---------------navigation-------------- */
+
+.navigation {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+.logo img {
+    width: 150px;
+}
+.menu {
+    flex-basis: 730px;
+}
+.menu ul {
+    justify-content: center;
+    gap: 40px;
+}
+
+/* -------------overview----------- */
+
+.overview {
+    padding: 50px var(--padding-inline-section) 0;
+}
+
+/*--------------symptoms-------------*/
+
+.symptoms {
+    padding: 50px var(--padding-inline-section) 0;
+}
+
+/*--------------causes-------------*/
+
+.causes {
+    padding: 50px var(--padding-inline-section) 0;
+}
+.causes-h2-d {
+    margin-top: 15px;
+}
+
+/*--------------risk-factors-------------*/
+
+.risk-factors {
+    padding: 50px var(--padding-inline-section) 0;
+}
+
+/*--------------complications-------------*/
+
+.complications {
+    padding: 50px var(--padding-inline-section) 0;
+}
+
+/*--------------preventions-------------*/
+
+.preventions {
+    padding: 50px var(--padding-inline-section) 0;
+}
+
+/*--------------cta-section-------------*/
+
+.cta-section-container {
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+}
+.cta-section {
+    margin-top: 50px;
+    background-color: #183b54;
+    padding: 100px var(--padding-inline-section) 50px;
+}
+.cta-section-container p {
+    color: white;
+    margin-top: 20px;
+}
+
+/*--------------footer-------------*/
+
+footer {
+    padding-block: 80px;
+    background-color: #ebf2fa;
+}
+
+.link-column {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.footer-container {
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/*--------------sub-footer-------------*/
+
+.subfooter {
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+}
+.subfooter-container {
+    justify-content: center;
+    gap: 30px;
+}
+
+/*--------------header-section-------------*/
+
+.header-section-container {
+    flex-direction: row;
+        color: white;
+}
+.header-section {
+    background-color: #183b54;
+    padding: 100px var(--padding-inline-section) 100px;
+}

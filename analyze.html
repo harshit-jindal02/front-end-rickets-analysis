@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyze Rickets</title>
+    <link rel="stylesheet" href="/analyze.css">
+</head>
+<body>
+    <div class="outer-box">
+        <div class="inner-box">
+            <header class="analyze-header">
+                <h1>Analyze Rickets</h1>
+                <p>Get to know if you have Rickets</p>
+            </header>
+            <main class="analyze-body">
+                <form id="myform">
+                    <p>
+                        <label for="name">Enter Patient Name: </label>
+                        <input type="text" id="name" placeholder="Patient Name" required>
+                    </p>
+                    <p>
+                        <label for="age">Enter Patient Age: </label>
+                        <input type="number" id="age" placeholder="Patient Age" required>
+                    </p>
+                    <p>
+                        <label for="calcium-level">Enter Calcium Level: </label>
+                        <input type="number" id="calcium-level" placeholder="Calcium Level">
+                    </p>
+                    <p>
+                        <label for="phosphorus-level">Enter Phosphorus Level: </label>
+                        <input type="number" id="phosphorus-level" placeholder="Phosphorus Level">
+                    </p>
+                    <p>
+                        <input type="submit" id="submit" value="Proceed To Analyze">
+                    </p>
+                </form>
+            </main>
+            <footer class="analyze-footer">
+                <p><a href="/rickets.html">Go back to Main Website!</a></p>
+            </footer>
+        </div>
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+    </div>
+    <script src="rickets.js"></script>
+</body>
+</html>
