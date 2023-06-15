@@ -1,10 +1,24 @@
 const form = document.getElementById("myform").addEventListener("submit", function(event) {
+
+/*
+  var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            //document.getElementById("demo").innerHTML =
+            //this.responseText;
+
+            console.log(this.responseText)
+       }
+    };
+    xhttp.open("GET", "192.168.1.29:8080/rickets", true);
+    xhttp.send();
+*/
     event.preventDefault();
     const name = document.getElementById("name").value;
     const age = document.getElementById("age").value;
     var calcium = (document.getElementById("calcium-level").value);
     var phosphorus = (document.getElementById("phosphorus-level").value);
-    
+
     const result = analyzeRickets(age, calcium, phosphorus);
     alert(result);
 });
